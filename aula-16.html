@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 16</title>
+    <script src="https://kit.fontawesome.com/0d832ebcde.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+            color:rgb(36, 100, 173);
+            box-sizing:border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        a:link, a:visited, a:active{
+            color:rgb(36, 100, 173);
+            text-decoration:none;
+        }
+        body{
+            background-color:#a6adccdc;
+        }
+        #main-header{
+            background-color:#f4f6ffdc;
+            color:rgb(36, 100, 173);
+            padding:20px;
+        }
+        #menu{
+            /*cor da caixa de menu*/
+            background-color:rgb(198, 201, 202);
+            width: 375px;
+            /*esses valores aqui em baixo definem pela ordem em sentido horario os tamanhos dos lados do menu*/
+            margin: 30px 20px ;
+            padding:20px; 
+        }
+        #menu a {
+            display: block;
+            padding:10px;
+        }
+
+        #menu i{
+            margin-right: 15px;
+            width:30;
+        }
+        #menu a:hover {
+            /*cria o efeito luminoso no botao*/
+          color:#255784;
+          background:#2196f3;
+          box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+        }
+        #menu header {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">LOGO EMPRESA</header>
+    <nav id="menu">
+        <header><i class="fa-solid fa-bars"></i>Menu Principal</header>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-box"></i>Produtos</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake"></i>Serviços</a></li>
+            <li><a href="#"><i class="fa-solid fa-users-line"></i>Quem somos</a></li>
+            <li><a href="#"><i class="fa-solid fa-house-chimney"></i>Contato</a></li>
+            <li><a href="#"><i class="fa-solid fa-person-circle-plus"></i>Trabalhe conosco</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
